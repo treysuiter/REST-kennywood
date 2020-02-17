@@ -1,0 +1,5 @@
+KennywoodEnv/
+__pycache__/
+.vscode/
+*.pyc
+db.sqlite3
