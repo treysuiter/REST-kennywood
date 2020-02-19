@@ -35,7 +35,7 @@ class ItineraryItems(ViewSet):
         """
         new_itinerary_item = Itinerary()
         new_itinerary_item.starttime = request.data['starttime']
-        new_itinerary_item.customer_id = request.auth.userid
+        new_itinerary_item.customer_id = request.auth.customer.id
         new_itinerary_item.attraction_id = request.data['attraction_id']
 
         new_itinerary_item.save()
